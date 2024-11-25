@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:prova2andre/telas/auth/signupscreen.dart';
+import 'package:prova2andre/telas/mainscreen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -25,7 +26,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
     try {
       await _auth.signInWithEmailAndPassword(email: email, password: password);
-      Navigator.pushReplacement(context,MaterialPageRoute(builder: (context) => HomeScreen()),);
+      Navigator.pushReplacement(context,MaterialPageRoute(builder: (context) => MainScreen()),);
     } on FirebaseAuthException catch (e) {
       _handleFirebaseAuthError(e);
     }

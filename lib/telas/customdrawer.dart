@@ -3,7 +3,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:prova2andre/telas/addvehiclescreen.dart';
 import 'package:prova2andre/telas/auth/loginscreen.dart';
+import 'package:prova2andre/telas/historyscreen.dart';
 import 'package:prova2andre/telas/mainscreen.dart';
+import 'package:prova2andre/telas/vehiclescreen.dart';
 
 class CustomDrawer extends StatefulWidget {
   const CustomDrawer({super.key});
@@ -82,7 +84,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => MyVehiclesScreen()),
+                      MaterialPageRoute(builder: (context) => VehiclesScreen()),
                     );
                   },
                 ),
@@ -110,10 +112,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   icon: Icons.person,
                   title: "Perfil",
                   onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => ProfileScreen()),
-                    );
+                    //Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileScreen()),);
                   },
                 ),
                 const Divider(),
