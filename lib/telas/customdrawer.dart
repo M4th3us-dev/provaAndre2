@@ -5,6 +5,7 @@ import 'package:prova2andre/telas/addvehiclescreen.dart';
 import 'package:prova2andre/telas/auth/loginscreen.dart';
 import 'package:prova2andre/telas/historyscreen.dart';
 import 'package:prova2andre/telas/mainscreen.dart';
+import 'package:prova2andre/telas/profilescreen.dart';
 import 'package:prova2andre/telas/vehiclescreen.dart';
 
 class CustomDrawer extends StatefulWidget {
@@ -112,7 +113,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   icon: Icons.person,
                   title: "Perfil",
                   onTap: () {
-                    //Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileScreen()),);
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileScreen()),);
                   },
                 ),
                 const Divider(),
